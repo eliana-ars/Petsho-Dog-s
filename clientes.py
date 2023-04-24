@@ -43,8 +43,8 @@ Perfil = Label(clientes, bg="#FFFFFF", image=fotoPerfil).place(x=100, y=150)
 
 # botao voltar ao menu
 def abrir_tela_menu():
-    subprocess.run(["python", "Menu.py"])
-btn_menu = Button(clientes, text="Voltar ao menu", bd=0, bg="#FFF", fg="#777777", font="Helvetica 10 underline", activebackground="#FFFFFF", activeforeground="#777")
+    subprocess.run(["python", "menu.py"])
+btn_menu = Button(clientes, text="Voltar ao menu", bd=0, bg="#FFF", fg="#777777", font="Helvetica 10 underline", activebackground="#FFFFFF", activeforeground="#777", command=abrir_tela_menu)
 btn_menu.place(x=900, y=40)
 
 # text "Código do Cliente "

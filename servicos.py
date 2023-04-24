@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 servicos = Tk()
 import subprocess
 
-# Configurações da tela
+#Configurações da tela
 servicos.title("Dogin's")
 
 servicos.resizable(False, False)
@@ -41,8 +41,8 @@ coracao = Label(servicos, bg="#FFF", image=fotoCoracao).place(relx=.60, rely=.20
 
 # botao voltar ao menu
 def abrir_tela_menu():
-    subprocess.run(["python", "Menu.py"])
-btn_menu = Button(servicos, text="Voltar ao menu", bd=0, bg="#FFF", fg="#777777", font="Helvetica 10 underline", activebackground="#FFFFFF", activeforeground="#777")
+    subprocess.run(["python", "menu.py"])
+btn_menu = Button(servicos, text="Voltar ao menu", bd=0, bg="#FFF", fg="#777777", font="Helvetica 10 underline", activebackground="#FFFFFF", activeforeground="#777", command=abrir_tela_menu)
 btn_menu.place(x=700, y=40)
 
 #text "Nome do Dono " e caixa de texto "Nome do dono"
